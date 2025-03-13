@@ -2,7 +2,7 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-<img width="1266" alt="Screen Shot 2022-06-19 at 2 18 18 PM" src="![my image](image.png)">
+![Chronicle of Digital Craftsmanship Preview](https://github.com/Evanoken/Chronicle-of-Digital-Craftsmanship-Evans/raw/main/src/assets/img/image.png)
 
 Built using:
 
