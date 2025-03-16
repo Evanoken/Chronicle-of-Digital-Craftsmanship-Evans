@@ -3,14 +3,13 @@ import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
 import Carousel from 'react-multi-carousel';
 import 'react-multi-carousel/lib/styles.css';
-import arrow1 from "../assets/img/arrow1.svg";
-import arrow2 from "../assets/img/arrow2.svg";
-import colorSharp from "../assets/img/color-sharp.png"
+import arrow1 from "../assets/img/arrow1.svg";  // Retained but unused in original code
+import arrow2 from "../assets/img/arrow2.svg";  // Retained but unused in original code
+import colorSharp from "../assets/img/color-sharp.png";
 
 export const Skills = () => {
   const responsive = {
     superLargeDesktop: {
-      // the naming can be any, depends on you.
       breakpoint: { max: 4000, min: 3000 },
       items: 5
     },
@@ -35,30 +34,46 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.<br></br> Lorem Ipsum has been the industry's standard dummy text.</p>
+                        <p>With expertise in full-stack development, multi-cloud platforms, and DevOps, I deliver scalable, secure, and efficient solutions. My skills in React, TypeScript, Azure DevOps, AWS, Kubernetes, and microservices ensure high-performance applications and streamlined development workflows.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={meter1} alt="React" />
+                                <h5>React</h5>
                             </div>
                             <div className="item">
-                                <img src={meter2} alt="Image" />
-                                <h5>Brand Identity</h5>
+                                <img src={meter2} alt="TypeScript" />
+                                <h5>TypeScript</h5>
                             </div>
                             <div className="item">
-                                <img src={meter3} alt="Image" />
-                                <h5>Logo Design</h5>
+                                <img src={meter3} alt="Spring Boot" />
+                                <h5>Spring Boot</h5>
                             </div>
                             <div className="item">
-                                <img src={meter1} alt="Image" />
-                                <h5>Web Development</h5>
+                                <img src={meter1} alt="Azure DevOps" />
+                                <h5>Azure DevOps</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="AWS" />
+                                <h5>AWS</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Kubernetes" />
+                                <h5>Kubernetes</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter1} alt="Microservices" />
+                                <h5>Microservices</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter2} alt="DevSecOps" />
+                                <h5>DevSecOps</h5>
                             </div>
                         </Carousel>
                     </div>
                 </div>
             </div>
         </div>
-        <img className="background-image-left" src={colorSharp} alt="Image" />
+        <img className="background-image-left" src={colorSharp} alt="Background" />
     </section>
-  )
-}
+  );
+};
