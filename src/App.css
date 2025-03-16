@@ -617,19 +617,87 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
+/* Certifications Section Container */
+.certifications {
+  background: linear-gradient(to bottom, #000000, #1a1a1a); /* Dark gradient background as seen in image 3 */
+  padding: 50px 0;
+  color: #ffffff;
+}
+
+.certifications .container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Certifications Heading */
+.certifications h3 {
+  font-size: 36px;
+  font-weight: bold;
+  margin-bottom: 30px;
+  display: flex;
+  align-items: center;
+  color: #ffffff; /* White text for contrast against dark background */
+}
+
+.certifications h3 .icon {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+/* Certifications Carousel */
+.certifications-slider {
+  margin-top: 20px;
+}
+
 .certifications-slider .item {
   text-align: center;
   padding: 20px;
+  background: #ffffff; /* White background for each item */
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
 }
-.cert-button {
+
+.certifications-slider .item:hover {
+  transform: translateY(-5px); /* Slight lift on hover for interactivity */
+}
+
+/* Certification Images */
+.certifications-slider .item img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 15px;
+}
+
+/* AWS Badge Specific Styling (Hexagonal Shape Approximation) */
+.certifications-slider .item.aws-cert img {
+  background: #005bff; /* Blue background for AWS badge */
+  clip-path: polygon(50% 0%, 100% 25%, 100% 75%, 50% 100%, 0% 75%, 0% 25%); /* Hexagonal shape */
+  padding: 10px;
+}
+
+/* Certificate Titles */
+.certifications-slider .item h5 {
+  font-size: 20px;
+  font-weight: 500;
+  color: #333333; /* Dark text for readability on white background */
+  margin-bottom: 10px;
+}
+
+/* Buttons (Verify, Download, Validate) */
+.certifications-slider .item .cert-button {
   display: inline-block;
-  padding: 8px 16px;
-  background-color: #007bff;
-  color: white;
+  padding: 10px 20px;
+  background-color: #26a69a; /* Teal color for buttons */
+  color: #ffffff;
   text-decoration: none;
-  border-radius: 4px;
-  margin-top: 10px;
+  border-radius: 5px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
 }
-.cert-button:hover {
-  background-color: #0056b3;
+
+.certifications-slider .item .cert-button:hover {
+  background-color: #1d857b; /* Darker teal on hover */
 }
