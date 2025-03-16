@@ -34,7 +34,7 @@ export const Skills = () => {
                 <div className="col-12">
                     <div className="skill-bx wow zoomIn">
                         <h2>Skills</h2>
-                        <p>With expertise in DevOps, full-stack development (Specialized in Back-end development), multi-cloud platforms, and DevOps, I deliver scalable, secure, and efficient solutions. My skills in React, TypeScript, Azure DevOps, AWS, Kubernetes, and microservices ensure high-performance applications and streamlined development workflows.</p>
+                        <p>With expertise in DevOps, full-stack development (Specialized in Back-end development), and multi-cloud platforms, I deliver scalable, secure, and efficient solutions. My skills in React, TypeScript, Azure DevOps, AWS, Kubernetes, and microservices ensure high-performance applications and streamlined development workflows.</p>
                         <Carousel responsive={responsive} infinite={true} className="owl-carousel owl-theme skill-slider">
                             <div className="item">
                                 <img src={meter1} alt="React" />
@@ -46,7 +46,11 @@ export const Skills = () => {
                             </div>
                             <div className="item">
                                 <img src={meter3} alt="Spring Boot" />
-                                <h5>Spring Boot</h5>
+                                <h5>Flask & Django</h5>
+                            </div>
+                            <div className="item">
+                                <img src={meter3} alt="Spring Boot" />
+                                <h5>Node JS</h5>
                             </div>
                             <div className="item">
                                 <img src={meter1} alt="Azure DevOps" />
