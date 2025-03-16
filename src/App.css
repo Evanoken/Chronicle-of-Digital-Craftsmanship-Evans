@@ -617,3 +617,19 @@ nav.navbar .navbar-toggler[aria-expanded="true"] .navbar-toggler-icon {
   margin-top: 20px;
 }
 
+.certifications-slider .item {
+  text-align: center;
+  padding: 20px;
+}
+.cert-button {
+  display: inline-block;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  text-decoration: none;
+  border-radius: 4px;
+  margin-top: 10px;
+}
+.cert-button:hover {
+  background-color: #0056b3;
+}
