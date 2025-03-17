@@ -74,11 +74,11 @@ export const Skills = () => {
                 </div>
                 <div className="item">
                   <img src={meter2} alt="TypeScript" />
-                  <h5>TypeScript</h5>
+                  <h5>React && TypeScript</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Flask & Django" />
-                  <h5>Flask & Django</h5>
+                  <h5>Flask && Django</h5>
                 </div>
                 <div className="item">
                   <img src={meter3} alt="Node JS" />
