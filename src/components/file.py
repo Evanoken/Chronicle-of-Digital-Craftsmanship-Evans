@@ -40,3 +40,6 @@ if session:
         print("No data fetched.")
 else:
     print("Could not log in. Check your credentials.")
+    
+    ## Cyber Security (Web Scraping) ## web penetration testing
+    ## Cyber Security (Web Scraping) ## web penetration testing
