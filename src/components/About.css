@@ -1,0 +1,107 @@
+.about-section {
+    padding: 100px 0;
+    background-color: #f8f9fa;
+    position: relative;
+  }
+  
+  .about-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  .about-title {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 50px;
+    text-align: center;
+    color: #121212;
+  }
+  
+  .highlight {
+    color: #00d8ff;
+  }
+  
+  .about-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    margin-bottom: 30px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .about-text {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+  }
+  
+  .skills-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  .skills-column {
+    padding: 15px;
+  }
+  
+  .skills-subtitle {
+    font-size: 1.4rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+  }
+  
+  .skills-list {
+    list-style: none;
+    padding-left: 0;
+  }
+  
+  .skills-list li {
+    position: relative;
+    padding-left: 25px;
+    margin-bottom: 10px;
+    font-size: 1.1rem;
+    color: #555;
+  }
+  
+  .skills-list li::before {
+    content: "▹";
+    position: absolute;
+    left: 0;
+    color: #00d8ff;
+  }
+  
+  @media (max-width: 768px) {
+    .about-section {
+      padding: 60px 0;
+    }
+    
+    .about-title {
+      font-size: 2rem;
+      margin-bottom: 30px;
+    }
+    
+    .about-card {
+      padding: 20px;
+    }
+    
+    .section-title {
+      font-size: 1.5rem;
+    }
+  }

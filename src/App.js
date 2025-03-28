@@ -14,6 +14,7 @@ function App() {
     <div className="App">
       <NavBar />
       <Banner />
+      <About id="about" /> {/* Add id prop for hash linking */}
       <Skills />
       <Projects />
       <Contact />
