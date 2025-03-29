@@ -7,92 +7,203 @@
     text-align: center;
     font-size: 2.5rem;
     margin-bottom: 15px;
+    color: #2c3e50;
   }
   
   .section-subtitle {
     text-align: center;
     margin-bottom: 50px;
     color: #6c757d;
+    font-size: 1.1rem;
   }
   
-  .nav-pills {
-    justify-content: center;
-    margin-bottom: 30px;
-  }
-  
+  /* Tab Navigation */
   .nav-pills .nav-link {
     color: #495057;
     font-weight: 500;
     margin: 0 10px;
     border-radius: 30px;
-    padding: 8px 20px;
+    padding: 8px 25px;
+    transition: all 0.3s ease;
+    border: 1px solid #dee2e6;
   }
   
   .nav-pills .nav-link.active {
     background-color: #0d6efd;
     color: white;
+    border-color: #0d6efd;
   }
   
-  .experience-item {
+  /* Timeline Style */
+  .timeline {
+    position: relative;
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .timeline:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 2px;
+    height: 100%;
+    background: #0d6efd;
+    transform: translateX(-50%);
+  }
+  
+  .timeline-item {
+    position: relative;
+    margin-bottom: 50px;
+    width: 100%;
+    padding: 20px;
     background: white;
-    padding: 30px;
-    border-radius: 10px;
-    box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    margin-bottom: 30px;
+    border-radius: 8px;
+    box-shadow: 0 3px 10px rgba(0,0,0,0.08);
   }
   
-  .experience-item h3 {
-    color: #212529;
+  .timeline-item.current {
+    border-left: 4px solid #28a745;
+  }
+  
+  .current-badge {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    background-color: #28a745;
+    color: white;
+    padding: 5px 15px;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+  
+  .timeline-header {
+    margin-bottom: 15px;
+    padding-right: 80px;
+  }
+  
+  .timeline-header h3 {
+    font-size: 1.4rem;
+    color: #2c3e50;
     margin-bottom: 5px;
   }
   
-  .experience-item h4 {
-    color: #6c757d;
+  .timeline-header h4 {
     font-size: 1rem;
-    margin-bottom: 15px;
+    color: #6c757d;
+    font-weight: normal;
   }
   
-  .experience-item ul {
+  .timeline-item ul {
     padding-left: 20px;
   }
   
-  .experience-item li {
+  .timeline-item li {
     margin-bottom: 8px;
+    color: #495057;
+    line-height: 1.6;
   }
   
-  .achievements {
-    margin-top: 50px;
+  /* Achievements Grid */
+  .achievements-grid {
+    margin-top: 20px;
   }
   
-  .achievements h3 {
-    text-align: center;
-    margin-bottom: 30px;
-  }
-  
-  .achievement-item {
-    text-align: center;
-    padding: 20px;
+  .achievement-card {
     background: white;
+    padding: 25px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0,0,0,0.05);
-    margin-bottom: 15px;
+    margin-bottom: 30px;
     height: 100%;
+    text-align: center;
+    transition: transform 0.3s ease;
   }
   
-  .achievement-item h4 {
-    font-size: 2rem;
+  .achievement-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  }
+  
+  .achievement-value {
+    font-size: 2.5rem;
+    font-weight: bold;
     color: #0d6efd;
     margin-bottom: 10px;
   }
   
+  .achievement-title {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 600;
+  }
+  
+  .achievement-card p {
+    color: #6c757d;
+    font-size: 0.9rem;
+  }
+  
+  /* Responsive Design */
   @media (max-width: 768px) {
     .experience {
       padding: 50px 0;
+    }
+    
+    .timeline:before {
+      left: 30px;
+    }
+    
+    .timeline-item {
+      padding: 15px;
+    }
+    
+    .current-badge {
+      top: 15px;
+      right: 15px;
+      font-size: 0.7rem;
+      padding: 3px 10px;
+    }
+    
+    .timeline-header {
+      padding-right: 70px;
     }
     
     .nav-pills .nav-link {
       margin: 5px;
       padding: 6px 15px;
       font-size: 0.9rem;
+    }
+    
+    .achievement-card {
+      padding: 20px 15px;
+    }
+    
+    .achievement-value {
+      font-size: 2rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .timeline:before {
+      display: none;
+    }
+    
+    .timeline-item {
+      text-align: center;
+    }
+    
+    .timeline-header {
+      padding-right: 0;
+    }
+    
+    .current-badge {
+      position: relative;
+      top: auto;
+      right: auto;
+      display: inline-block;
+      margin-bottom: 10px;
     }
   }
