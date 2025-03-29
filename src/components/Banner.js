@@ -53,15 +53,32 @@ export const Banner = () => {
         <Row className="aligh-items-center">
           <Col xs={12} md={6} xl={7}>
             <TrackVisibility>
-              {({ isVisible }) =>
-              <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
-                <span className="tagline"><b>DevOps | SRE | Cloud Engineer</b></span>
-                <h1>{`Hi! I'm Evans Kariuki`} <span className="txt-rotate" dataPeriod="1000" data-rotate='["DevSecOps Engineer", "FullStack Developer", "SalesForce Engineer" ]'><span className="wrap">{text}</span></span></h1>
-                  <p>
-                  I’m Kariuki Evans Ngugi,
-                  </p>
-                  <button onClick={() => console.log('connect')}>Let’s Connect <ArrowRightCircle size={25} /></button>
-              </div>}
+            {({ isVisible }) => {
+  const rotatingTexts = ["DevSecOps Engineer", "FullStack Developer", "SalesForce Engineer"];
+  
+  return (
+    <div className={isVisible ? "animate__animated animate__fadeIn" : ""}>
+      <span className="tagline"><b>DevOps | SRE | Cloud Engineer</b></span>
+      <h1>
+        {`Hi! I'm Evans Kariuki `}
+        <span className="txt-rotate" dataPeriod="1000">
+          <span className="wrap">
+            {rotatingTexts.map((text, index) => (
+              <span key={index} className="rotating-text">{text}</span>
+            ))}
+          </span>
+        </span>
+      </h1>
+      
+      <button 
+        onClick={() => console.log('connect')} 
+        className="connect-btn"
+      >
+        Let's Connect <ArrowRightCircle size={25} />
+      </button>
+    </div>
+  );
+}}
             </TrackVisibility>
           </Col>
           <Col xs={12} md={6} xl={5}>
