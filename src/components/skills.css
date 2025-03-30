@@ -1,0 +1,162 @@
+/* Skills Section */
+.skill {
+    position: relative;
+    padding: 80px 0;
+    background-color: #f8f9fa;
+  }
+  
+  .skill-bx {
+    background: #fff;
+    border-radius: 10px;
+    padding: 40px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+  }
+  
+  .skill h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2c3e50;
+  }
+  
+  .skill-description {
+    text-align: center;
+    max-width: 800px;
+    margin: 0 auto 40px;
+    color: #555;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  
+  .section-subtitle {
+    text-align: center;
+    font-size: 1.8rem;
+    margin: 40px 0 30px;
+    color: #2c3e50;
+  }
+  
+  /* Skills Carousel */
+  .skill-slider {
+    padding: 0 0 40px;
+  }
+  
+  .skill-item {
+    text-align: center;
+    padding: 20px;
+  }
+  
+  .skill-item img {
+    width: 80px;
+    height: 80px;
+    margin: 0 auto 15px;
+    display: block;
+  }
+  
+  .skill-item h5 {
+    font-size: 1.1rem;
+    color: #2c3e50;
+  }
+  
+  /* Certifications Section */
+  .certifications-section {
+    margin-top: 60px;
+  }
+  
+  .certification-card {
+    background: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 15px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.08);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cert-image-container {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .cert-image {
+    max-width: 150px;
+    max-height: 150px;
+    object-fit: contain;
+    border-radius: 5px;
+  }
+  
+  .cert-details {
+    flex: 1;
+  }
+  
+  .cert-details h4 {
+    font-size: 1.2rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+  }
+  
+  .cert-issuer {
+    color: #6c757d;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .cert-description {
+    color: #555;
+    font-size: 0.95rem;
+    margin-bottom: 15px;
+  }
+  
+  .cert-date {
+    color: #6c757d;
+    font-size: 0.9rem;
+    margin-bottom: 15px;
+  }
+  
+  .cert-button {
+    display: inline-block;
+    background: #0d6efd;
+    color: #fff;
+    padding: 8px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 500;
+    transition: all 0.3s ease;
+  }
+  
+  .cert-button:hover {
+    background: #0b5ed7;
+    transform: translateY(-2px);
+  }
+  
+  .background-image-left {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    z-index: -1;
+    opacity: 0.3;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .skill {
+      padding: 50px 0;
+    }
+    
+    .skill-bx {
+      padding: 30px;
+    }
+    
+    .skill h2 {
+      font-size: 2rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1.5rem;
+    }
+    
+    .cert-image {
+      max-width: 120px;
+    }
+  }
