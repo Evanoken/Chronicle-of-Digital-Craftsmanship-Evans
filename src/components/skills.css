@@ -39,6 +39,10 @@
   }
   
   /* Skills Carousel */
+  .skills-section {
+    margin-bottom: 60px;
+  }
+  
   .skill-slider {
     padding: 0 0 40px;
   }
