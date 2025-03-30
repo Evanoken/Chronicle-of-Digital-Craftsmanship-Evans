@@ -83,7 +83,7 @@ export const Skills = () => {
                 </p>
               </div>
 
-              {/* Skills Carousel */}
+              {/* Technical Skills Section */}
               <div className="skills-section">
                 <h3 className="section-subtitle">Technical Skills</h3>
                 <Carousel
@@ -95,8 +95,6 @@ export const Skills = () => {
                   keyBoardControl={true}
                   customTransition="all .5s"
                   transitionDuration={500}
-                  containerClass="carousel-container"
-                  itemClass="carousel-item"
                 >
                   {skills.map((skill, index) => (
                     <div className="skill-item" key={index}>
