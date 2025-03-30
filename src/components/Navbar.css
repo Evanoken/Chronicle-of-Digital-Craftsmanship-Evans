@@ -1,14 +1,23 @@
 .navbar {
     padding: 15px 0;
     transition: all 0.3s;
+    /* Add these sticky positioning properties */
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    width: 100%;
+    /* Optional: Add a slight blur effect when sticky */
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
   }
   
   .navbar.scrolled {
     padding: 10px 0;
-    background-color: #121212 !important;
+    background-color: rgba(18, 18, 18, 0.95) !important; /* Slightly transparent */
     box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
   }
   
+  /* Rest of your existing styles remain the same */
   .navbar-profile-img {
     border-radius: 50%;
     width: 50px;
