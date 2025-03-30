@@ -1,3 +1,4 @@
+import React from 'react';
 import meter1 from "../assets/img/meter1.svg";
 import meter2 from "../assets/img/meter2.svg";
 import meter3 from "../assets/img/meter3.svg";
@@ -6,9 +7,10 @@ import alxCertificate from "../assets/img/alx-certificate.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
-import './Skills.css'; // Create this file for custom styles
+import './Skills.css';
 
 export const Skills = () => {
+  // Carousel responsiveness settings
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
@@ -28,17 +30,8 @@ export const Skills = () => {
     },
   };
 
+  // Certification data
   const certifications = [
-    {
-      image: awsBadge,
-      name: "AWS Certified Solutions Architect - Associate",
-      issuer: "Amazon Web Services",
-      date: "November 2020",
-      button: {
-        type: "Verify",
-        link: "https://aws.amazon.com/verification",
-      },
-    },
     {
       image: alxCertificate,
       name: "ALX Software Engineering Certificate",
@@ -50,6 +43,29 @@ export const Skills = () => {
         link: "https://intranet.alxswe.com/certificates/xRm2EMRFn",
       },
     },
+    {
+      image: awsBadge,
+      name: "AWS Certified Solutions Architect - Associate",
+      issuer: "Amazon Web Services",
+      date: "November 2020",
+      button: {
+        type: "Verify",
+        link: "https://aws.amazon.com/verification",
+      },
+    },
+  ];
+
+  // Skills data
+  const skills = [
+    { icon: meter1, name: "React" },
+    { icon: meter2, name: "TypeScript" },
+    { icon: meter3, name: "Flask & Django" },
+    { icon: meter1, name: "Node JS" },
+    { icon: meter2, name: "Azure DevOps" },
+    { icon: meter3, name: "AWS" },
+    { icon: meter1, name: "Kubernetes" },
+    { icon: meter2, name: "Microservices" },
+    { icon: meter3, name: "DevSecOps" },
   ];
 
   return (
@@ -58,70 +74,49 @@ export const Skills = () => {
         <div className="row">
           <div className="col-12">
             <div className="skill-bx">
-              <h2>Skills & Certifications</h2>
-              <p className="skill-description">
-                With expertise in DevOps, full-stack development (specialized in back-end development), and multi-cloud platforms, I deliver scalable, secure, and efficient solutions.
-              </p>
+              {/* Section Header */}
+              <div className="section-header">
+                <h2>Skills & Certifications</h2>
+                <p className="skill-description">
+                  With expertise in DevOps, full-stack development (specialized in back-end development), 
+                  and multi-cloud platforms, I deliver scalable, secure, and efficient solutions.
+                </p>
+              </div>
 
               {/* Skills Carousel */}
-              <h3 className="section-subtitle">Technical Skills</h3>
-              <Carousel
-                responsive={responsive}
-                infinite={true}
-                className="skill-slider"
-              >
-                <div className="skill-item">
-                  <img src={meter1} alt="React" />
-                  <h5>React</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={meter2} alt="TypeScript" />
-                  <h5>TypeScript</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={meter3} alt="Flask & Django" />
-                  <h5>Flask & Django</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={meter1} alt="Node JS" />
-                  <h5>Node JS</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={meter2} alt="Azure DevOps" />
-                  <h5>Azure DevOps</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={meter3} alt="AWS" />
-                  <h5>AWS</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={meter1} alt="Kubernetes" />
-                  <h5>Kubernetes</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={meter2} alt="Microservices" />
-                  <h5>Microservices</h5>
-                </div>
-                <div className="skill-item">
-                  <img src={meter3} alt="DevSecOps" />
-                  <h5>DevSecOps</h5>
-                </div>
-              </Carousel>
+              <div className="skills-section">
+                <h3 className="section-subtitle">Technical Skills</h3>
+                <Carousel
+                  responsive={responsive}
+                  infinite={true}
+                  className="skill-slider"
+                  autoPlay={true}
+                  autoPlaySpeed={2000}
+                  keyBoardControl={true}
+                  customTransition="all .5s"
+                  transitionDuration={500}
+                  containerClass="carousel-container"
+                  itemClass="carousel-item"
+                >
+                  {skills.map((skill, index) => (
+                    <div className="skill-item" key={index}>
+                      <img src={skill.icon} alt={skill.name} />
+                      <h5>{skill.name}</h5>
+                    </div>
+                  ))}
+                </Carousel>
+              </div>
 
               {/* Certifications Section */}
               <div className="certifications-section">
                 <h3 className="section-subtitle">Certifications</h3>
-                <Carousel
-                  responsive={responsive}
-                  infinite={true}
-                  className="certifications-slider"
-                >
+                <div className="certifications-grid">
                   {certifications.map((cert, index) => (
                     <div className="certification-card" key={index}>
                       <div className="cert-image-container">
                         <img src={cert.image} alt={cert.name} className="cert-image" />
                       </div>
-                      <div className="cert-details">
+                      <div className="cert-content">
                         <h4>{cert.name}</h4>
                         <p className="cert-issuer">{cert.issuer}</p>
                         {cert.description && <p className="cert-description">{cert.description}</p>}
@@ -137,7 +132,7 @@ export const Skills = () => {
                       </div>
                     </div>
                   ))}
-                </Carousel>
+                </div>
               </div>
             </div>
           </div>
