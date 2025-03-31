@@ -1,73 +1,137 @@
-.navbar {
+/* Navbar Base Styles */
+.navbar-main {
     padding: 15px 0;
-    transition: all 0.3s;
-    /* Add these sticky positioning properties */
-    position: sticky;
+    position: fixed;
     top: 0;
-    z-index: 1000;
     width: 100%;
-    /* Optional: Add a slight blur effect when sticky */
-    backdrop-filter: blur(5px);
-    -webkit-backdrop-filter: blur(5px);
+    z-index: 1000;
+    transition: all 0.3s ease;
+    background-color: rgba(255, 255, 255, 0.95);
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(10px);
   }
   
-  .navbar.scrolled {
+  .navbar-main.scrolled {
     padding: 10px 0;
-    background-color: rgba(18, 18, 18, 0.95) !important; /* Slightly transparent */
-    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   }
   
-  /* Rest of your existing styles remain the same */
+  /* Brand Section */
+  .navbar-brand {
+    display: flex;
+    align-items: center;
+    margin-right: 2rem;
+  }
+  
   .navbar-profile-img {
+    width: 40px;
+    height: 40px;
     border-radius: 50%;
-    width: 50px;
-    height: 50px;
     object-fit: cover;
+    border: 2px solid #0d6efd;
+    margin-right: 10px;
+  }
+  
+  .navbar-name {
+    font-weight: 600;
+    color: #2c3e50;
+    font-size: 1.1rem;
+  }
+  
+  /* Navigation Links */
+  .navbar-nav {
+    gap: 1.5rem;
   }
   
   .nav-link {
-    color: #fff !important;
+    color: #495057 !important;
     font-weight: 500;
-    margin: 0 15px;
     position: relative;
+    padding: 0.5rem 0;
+    transition: all 0.3s ease;
+    text-transform: capitalize;
   }
   
-  .nav-link:hover,
+  .nav-link:hover {
+    color: #0d6efd !important;
+  }
+  
   .nav-link.active {
-    color: #00d8ff !important;
+    color: #0d6efd !important;
+    font-weight: 600;
   }
   
   .nav-link.active::after {
     content: '';
     position: absolute;
-    bottom: -5px;
+    bottom: 0;
     left: 0;
     width: 100%;
     height: 2px;
-    background-color: #00d8ff;
+    background-color: #0d6efd;
+    transform: scaleX(1);
+    transition: transform 0.3s ease;
   }
   
-  .connect-button {
-    font-weight: 700;
-    color: #fff;
-    border: 1px solid #fff;
-    padding: 10px 25px;
-    font-size: 16px;
-    background-color: transparent;
-    position: relative;
-    transition: all 0.3s ease-out;
-    border-radius: 30px;
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #0d6efd;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
   }
   
-  .connect-button:hover {
-    color: #121212;
-    background-color: #fff;
+  .nav-link:hover::after {
+    transform: scaleX(1);
+  }
+  
+  /* Mobile Menu Toggle */
+  .navbar-toggler {
+    border: none;
+    padding: 0.5rem;
+  }
+  
+  .navbar-toggler:focus {
+    box-shadow: none;
   }
   
   .navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%2813, 110, 253, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+    width: 1.5em;
+    height: 1.5em;
   }
   
-  .navbar-toggler {
-    border-color: rgba(255, 255, 255, 0.1);
+  /* Responsive Design */
+  @media (max-width: 992px) {
+    .navbar-collapse {
+      padding-top: 1rem;
+    }
+    
+    .navbar-nav {
+      gap: 0.5rem;
+    }
+    
+    .nav-link {
+      padding: 0.5rem 1rem;
+    }
+    
+    .nav-link::after,
+    .nav-link.active::after {
+      display: none;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .navbar-name {
+      display: none;
+    }
+    
+    .navbar-profile-img {
+      width: 35px;
+      height: 35px;
+    }
   }
