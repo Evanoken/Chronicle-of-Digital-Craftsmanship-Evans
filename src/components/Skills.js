@@ -7,30 +7,29 @@ import alxCertificate from "../assets/img/alx-certificate.png";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
 import colorSharp from "../assets/img/color-sharp.png";
-import './Skills.css';
 
 export const Skills = () => {
   // Carousel responsiveness settings
   const responsive = {
     superLargeDesktop: {
       breakpoint: { max: 4000, min: 3000 },
-      items: 5,
+      items: 5
     },
     desktop: {
       breakpoint: { max: 3000, min: 1024 },
-      items: 3,
+      items: 3
     },
     tablet: {
       breakpoint: { max: 1024, min: 464 },
-      items: 2,
+      items: 2
     },
     mobile: {
       breakpoint: { max: 464, min: 0 },
-      items: 1,
-    },
+      items: 1
+    }
   };
 
-  // Certification data
+  // Certification data - ensure this is always an array
   const certifications = [
     {
       image: alxCertificate,
@@ -40,8 +39,8 @@ export const Skills = () => {
       description: "12-month intensive software engineering program with specialization in Back-end",
       button: {
         type: "Validate",
-        link: "https://intranet.alxswe.com/certificates/xRm2EMRFn",
-      },
+        link: "https://intranet.alxswe.com/certificates/xRm2EMRFn"
+      }
     },
     {
       image: awsBadge,
@@ -50,12 +49,12 @@ export const Skills = () => {
       date: "November 2020",
       button: {
         type: "Verify",
-        link: "https://aws.amazon.com/verification",
-      },
-    },
+        link: "https://aws.amazon.com/verification"
+      }
+    }
   ];
 
-  // Skills data
+  // Skills data - ensure this is always an array
   const skills = [
     { icon: meter1, name: "React" },
     { icon: meter2, name: "TypeScript" },
@@ -65,7 +64,7 @@ export const Skills = () => {
     { icon: meter3, name: "AWS" },
     { icon: meter1, name: "Kubernetes" },
     { icon: meter2, name: "Microservices" },
-    { icon: meter3, name: "DevSecOps" },
+    { icon: meter3, name: "DevSecOps" }
   ];
 
   return (
@@ -84,54 +83,58 @@ export const Skills = () => {
               </div>
 
               {/* Technical Skills Section */}
-              <div className="skills-section">
-                <h3 className="section-subtitle">Technical Skills</h3>
-                <Carousel
-                  responsive={responsive}
-                  infinite={true}
-                  className="skill-slider"
-                  autoPlay={true}
-                  autoPlaySpeed={2000}
-                  keyBoardControl={true}
-                  customTransition="all .5s"
-                  transitionDuration={500}
-                >
-                  {skills.map((skill, index) => (
-                    <div className="skill-item" key={index}>
-                      <img src={skill.icon} alt={skill.name} />
-                      <h5>{skill.name}</h5>
-                    </div>
-                  ))}
-                </Carousel>
-              </div>
+              {skills && skills.length > 0 && (
+                <div className="skills-section">
+                  <h3 className="section-subtitle">Technical Skills</h3>
+                  <Carousel
+                    responsive={responsive}
+                    infinite={true}
+                    className="skill-slider"
+                    autoPlay={true}
+                    autoPlaySpeed={2000}
+                    keyBoardControl={true}
+                    customTransition="all .5s"
+                    transitionDuration={500}
+                  >
+                    {skills.map((skill, index) => (
+                      <div className="skill-item" key={index}>
+                        <img src={skill.icon} alt={skill.name} />
+                        <h5>{skill.name}</h5>
+                      </div>
+                    ))}
+                  </Carousel>
+                </div>
+              )}
 
               {/* Certifications Section */}
-              <div className="certifications-section">
-                <h3 className="section-subtitle">Certifications</h3>
-                <div className="certifications-grid">
-                  {certifications.map((cert, index) => (
-                    <div className="certification-card" key={index}>
-                      <div className="cert-image-container">
-                        <img src={cert.image} alt={cert.name} className="cert-image" />
+              {certifications && certifications.length > 0 && (
+                <div className="certifications-section">
+                  <h3 className="section-subtitle">Certifications</h3>
+                  <div className="certifications-grid">
+                    {certifications.map((cert, index) => (
+                      <div className="certification-card" key={index}>
+                        <div className="cert-image-container">
+                          <img src={cert.image} alt={cert.name} className="cert-image" />
+                        </div>
+                        <div className="cert-content">
+                          <h4>{cert.name}</h4>
+                          <p className="cert-issuer">{cert.issuer}</p>
+                          {cert.description && <p className="cert-description">{cert.description}</p>}
+                          <p className="cert-date">Issued: {cert.date}</p>
+                          <a
+                            href={cert.button.link}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="cert-button"
+                          >
+                            {cert.button.type}
+                          </a>
+                        </div>
                       </div>
-                      <div className="cert-content">
-                        <h4>{cert.name}</h4>
-                        <p className="cert-issuer">{cert.issuer}</p>
-                        {cert.description && <p className="cert-description">{cert.description}</p>}
-                        <p className="cert-date">Issued: {cert.date}</p>
-                        <a
-                          href={cert.button.link}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="cert-button"
-                        >
-                          {cert.button.type}
-                        </a>
-                      </div>
-                    </div>
-                  ))}
+                    ))}
+                  </div>
                 </div>
-              </div>
+              )}
             </div>
           </div>
         </div>
