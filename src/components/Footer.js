@@ -42,7 +42,7 @@ export const Footer = () => {
               <a href="https://linkedin.com/in/evans-ngugi" target="_blank" rel="noopener noreferrer">
                 <Linkedin className="social-icon" />
               </a>
-              <a href="https://github.com/evanskariuki" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/Evanoken" target="_blank" rel="noopener noreferrer">
                 <Github className="social-icon" />
               </a>
               <a href="https://twitter.com/evanskariuki" target="_blank" rel="noopener noreferrer">
