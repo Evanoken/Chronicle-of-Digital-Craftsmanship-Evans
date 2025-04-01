@@ -1,0 +1,133 @@
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    padding: 60px 0 20px;
+    position: relative;
+  }
+  
+  .footer::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, #0d6efd, #00d8ff);
+  }
+  
+  .footer-section {
+    margin-bottom: 30px;
+  }
+  
+  .footer-heading {
+    color: #fff;
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+    position: relative;
+    padding-bottom: 10px;
+  }
+  
+  .footer-heading::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 50px;
+    height: 2px;
+    background-color: #0d6efd;
+  }
+  
+  .footer-links {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footer-links li {
+    margin-bottom: 10px;
+  }
+  
+  .footer-links a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+  
+  .footer-links a:hover {
+    color: #0d6efd;
+    padding-left: 5px;
+  }
+  
+  .contact-info p {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+  
+  .footer-icon {
+    margin-right: 10px;
+    color: #0d6efd;
+    font-size: 1.2rem;
+  }
+  
+  .contact-info a {
+    color: #ecf0f1;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+  
+  .contact-info a:hover {
+    color: #0d6efd;
+  }
+  
+  .social-icons {
+    display: flex;
+    gap: 20px;
+  }
+  
+  .social-icon {
+    color: #fff;
+    font-size: 1.8rem;
+    transition: all 0.3s ease;
+  }
+  
+  .social-icon:hover {
+    color: #0d6efd;
+    transform: translateY(-3px);
+  }
+  
+  .copyright {
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  .copyright p {
+    margin-bottom: 5px;
+    color: #bdc3c7;
+  }
+  
+  .small-text {
+    font-size: 0.8rem;
+    opacity: 0.7;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .footer-section {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    
+    .footer-heading::after {
+      left: 50%;
+      transform: translateX(-50%);
+    }
+    
+    .social-icons {
+      justify-content: center;
+    }
+    
+    .contact-info p {
+      justify-content: center;
+    }
+  }
