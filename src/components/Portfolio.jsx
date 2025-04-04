@@ -5,10 +5,10 @@ import {
   FaShieldAlt, 
   FaUsers, 
   FaChartLine,
-  FaCloud
+  FaCloud,
+  FaMicrosoft
 } from 'react-icons/fa';
 import { 
-  SiMicrosoftazure, 
   SiKubernetes, 
   SiAwslambda, 
   SiReact, 
@@ -17,85 +17,84 @@ import {
 import { IoMdTime } from 'react-icons/io';
 import './Portfolio.css';
 
-// Project data
-const projects = [
-  {
-    id: 1,
-    title: "Enterprise Platform Suite",
-    description: "Architected and deployed enterprise platforms reducing deployment time by 40%.",
-    image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
-    stats: [
-      { icon: <IoMdTime />, value: "40% faster deployments" },
-      { icon: <FaChartLine />, value: "35% performance boost" },
-      { icon: <FaUsers />, value: "8-member team" }
-    ],
-    tags: [
-      { icon: <SiMicrosoftazure />, name: "Azure DevOps" },
-      { icon: <SiTypescript />, name: "TypeScript" }
-    ],
-    links: {
-      case: "#",
-      demo: "#"
-    },
-    featured: true
-  },
-  {
-    id: 2,
-    title: "DevSecOps Implementation",
-    description: "Reduced security vulnerabilities by 60% through CI/CD improvements.",
-    image: "https://images.unsplash.com/photo-1563986768609-322da13575f3",
-    stats: [
-      { icon: <FaShieldAlt />, value: "60% fewer vulnerabilities" },
-      { icon: <IoMdTime />, value: "45% faster deployments" }
-    ],
-    tags: [
-      { icon: <FaShieldAlt />, name: "DevSecOps" },
-      { icon: <SiKubernetes />, name: "Kubernetes" }
-    ],
-    links: {
-      doc: "#",
-      demo: "#"
-    }
-  },
-  {
-    id: 3,
-    title: "E-Commerce Platforms",
-    description: "Developed platforms serving 50,000+ users with 60% faster page loads.",
-    image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a",
-    stats: [
-      { icon: <FaUsers />, value: "50k+ monthly users" },
-      { icon: <FaChartLine />, value: "60% faster loads" }
-    ],
-    tags: [
-      { icon: <SiReact />, name: "React" },
-      { icon: <SiTypescript />, name: "TypeScript" }
-    ],
-    links: {
-      demo: "#",
-      code: "#"
-    }
-  },
-  {
-    id: 4,
-    title: "AgriGuard AI System",
-    description: "ML-based system achieving 85% accuracy for pest prediction.",
-    image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
-    stats: [
-      { icon: <FaChartLine />, value: "85% accuracy" },
-      { icon: <FaUsers />, value: "100 farmers" }
-    ],
-    tags: [
-      { icon: <FaCloud />, name: "AI/ML" },
-      { icon: <SiAwslambda />, name: "AWS Lambda" }
-    ],
-    links: {
-      demo: "#",
-      paper: "#"
-    }
-  }
-];
-
 const Portfolio = () => {
+  const projects = [
+    {
+      id: 1,
+      title: "Enterprise Platform Suite",
+      description: "Architected and deployed enterprise platforms reducing deployment time by 40%.",
+      image: "https://images.unsplash.com/photo-1551288049-bebda4e38f71",
+      stats: [
+        { icon: <IoMdTime />, value: "40% faster deployments" },
+        { icon: <FaChartLine />, value: "35% performance boost" },
+        { icon: <FaUsers />, value: "8-member team" }
+      ],
+      tags: [
+        { icon: <FaMicrosoft />, name: "Azure DevOps" },
+        { icon: <SiTypescript />, name: "TypeScript" }
+      ],
+      links: {
+        case: "#",
+        demo: "#"
+      },
+      featured: true
+    },
+    {
+      id: 2,
+      title: "DevSecOps Implementation",
+      description: "Reduced security vulnerabilities by 60% through CI/CD improvements.",
+      image: "https://images.unsplash.com/photo-1563986768609-322da13575f3",
+      stats: [
+        { icon: <FaShieldAlt />, value: "60% fewer vulnerabilities" },
+        { icon: <IoMdTime />, value: "45% faster deployments" }
+      ],
+      tags: [
+        { icon: <FaShieldAlt />, name: "DevSecOps" },
+        { icon: <SiKubernetes />, name: "Kubernetes" }
+      ],
+      links: {
+        doc: "#",
+        demo: "#"
+      }
+    },
+    {
+      id: 3,
+      title: "E-Commerce Platforms",
+      description: "Developed platforms serving 50,000+ users with 60% faster page loads.",
+      image: "https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a",
+      stats: [
+        { icon: <FaUsers />, value: "50k+ monthly users" },
+        { icon: <FaChartLine />, value: "60% faster loads" }
+      ],
+      tags: [
+        { icon: <SiReact />, name: "React" },
+        { icon: <SiTypescript />, name: "TypeScript" }
+      ],
+      links: {
+        demo: "#",
+        code: "#"
+      }
+    },
+    {
+      id: 4,
+      title: "AgriGuard AI System",
+      description: "ML-based system achieving 85% accuracy for pest prediction.",
+      image: "https://images.unsplash.com/photo-1532094349884-543bc11b234d",
+      stats: [
+        { icon: <FaChartLine />, value: "85% accuracy" },
+        { icon: <FaUsers />, value: "100 farmers" }
+      ],
+      tags: [
+        { icon: <FaCloud />, name: "AI/ML" },
+        { icon: <SiAwslambda />, name: "AWS Lambda" }
+      ],
+      links: {
+        demo: "#",
+        paper: "#"
+      }
+    }
+  ];
+
   const featuredProject = projects.find(project => project.featured);
   const regularProjects = projects.filter(project => !project.featured);
 
