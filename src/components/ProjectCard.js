@@ -13,4 +13,4 @@ export const ProjectCard = ({ title, description, imgUrl }) => {
     </Col>
   )
 }
-// not yet
+// not yet ready
