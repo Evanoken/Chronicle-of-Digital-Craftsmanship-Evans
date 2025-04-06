@@ -1,8 +1,9 @@
+import './NavBar.css';
 import { useState, useEffect } from "react";
 import { Navbar, Nav, Container } from "react-bootstrap";
 import profilephoto from '../assets/img/profile-photo.jpeg';
 import { HashLink } from 'react-router-hash-link';
-import './NavBar.css'; // Assuming you have a CSS file for styles
+
 
 export const NavBar = () => {
   const [activeLink, setActiveLink] = useState('home');
