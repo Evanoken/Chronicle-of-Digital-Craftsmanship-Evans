@@ -8,7 +8,7 @@ import { Footer } from "./components/Footer";
 import About from "./components/About";
 import { Experience } from "./components/Experience";
 import Portfolio from './components/Portfolio';
-
+import Blog from './components/Blog';
 function App() {
   return (
     <div className="App">
@@ -18,6 +18,7 @@ function App() {
       <Experience id="experience" />
       <Skills />
       <Portfolio id="portfolio" />
+      <Blog id="blog" />
       {/* <Projects /> */}
       {/* <Contact /> */}
       <Footer />
