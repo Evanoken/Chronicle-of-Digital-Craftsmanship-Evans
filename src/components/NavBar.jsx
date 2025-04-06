@@ -71,6 +71,7 @@ export const NavBar = () => {
             >
               Portfolio
             </Nav.Link>
+            {/* onclick  target="_blank" */}
             <Nav.Link
               href="#blog"
               className={`nav-link ${activeLink === 'blog' ? 'active' : ''}`}
