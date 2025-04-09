@@ -18,8 +18,6 @@ def login_and_get_session(email, password):
         print("Login failed")
         return None
 
-session = login_and_get_session(email, password)
-
 if session:
     url = 'https://app.outlier.ai/internal/experts/worker-skills'
     json_data = fetch_json_data(url, session)
