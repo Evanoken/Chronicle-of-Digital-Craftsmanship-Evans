@@ -21,11 +21,7 @@ def login_and_get_session(email, password):
 def fetch_json_data(url, session):
     response = session.get(url)
     if response.status_code == 200:
-        json_data = response.json()
-        return json_data
-    else:
-        print(f"Failed to fetch data. Status code: {response.status_code}")
-        return None
+        
 
 email = 'reymondbrlz@gmail.com'
 password = 'Reymond123?'
