@@ -18,13 +18,6 @@ def login_and_get_session(email, password):
         print("Login failed")
         return None
 
-def fetch_json_data(url, session):
-    response = session.get(url)
-    if response.status_code == 200:
-        
-
-email = 'reymondbrlz@gmail.com'
-password = 'Reymond123?'
 session = login_and_get_session(email, password)
 
 if session:
