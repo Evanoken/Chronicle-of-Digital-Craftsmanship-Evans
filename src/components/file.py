@@ -23,10 +23,7 @@ if session:
     json_data = fetch_json_data(url, session)
     if json_data:
         print("Fetched JSON data:", json_data)
-    else:
-        print("No data fetched.")
-else:
-    print("Could not log in. Check your credentials.")
+    e
     
     ## Cyber Security (Web Scraping) ## web penetration testing
     ## Cyber Security (Web Scraping) ## web penetration testing
