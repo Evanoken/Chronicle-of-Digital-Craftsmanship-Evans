@@ -21,5 +21,5 @@ def login_and_get_session(email, password):
 if session:
     ## Cyber Security (Web Scraping) ## web penetration testing
     
-    print("Web scraping is the process of extracting data from websites. It involves making HTTP requests to a web server, retrieving the HTML content of a webpage, and then parsing that content to extract the desired information. Web scraping can be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
+    print("Web she process of extracting data from websites. It involves making HTTP requests to a web server, retrieving the HTML content of a webpage, and then parsing that content to extract the desired information. Web scraping can be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
     
