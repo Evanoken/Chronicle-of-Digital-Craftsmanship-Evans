@@ -18,6 +18,3 @@ def login_and_get_session(email, password):
         print("Login failed")
         return None
 
-if session:
-      
-    
