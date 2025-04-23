@@ -31,3 +31,4 @@ def get_dashboard_data(session):
         return None
 
 def main():
+    email = '       '
