@@ -32,3 +32,14 @@ def get_dashboard_data(session):
 
 def main():
     email = '       '
+    password = '       '
+    session = login_and_get_session(email, password)
+    if session:
+        dashboard_data = get_dashboard_data(session)
+        if dashboard_data:
+            print("Dashboard data retrieved successfully")
+            # Process the dashboard data as needed
+        else:
+            print("Failed to retrieve dashboard data")
+    else:
+        print("Failed to log in")
