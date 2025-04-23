@@ -8,7 +8,7 @@ export const Experience = () => {
       <Container>
         <h2>Professional Journey</h2>
         <p className="section-subtitle">My career experience and academic background</p>
-        <br />
+        
         <Tab.Container id="experience-tabs" defaultActiveKey="experience">
           <Nav variant="pills" className="mb-5 justify-content-center">
             <Nav.Item>
