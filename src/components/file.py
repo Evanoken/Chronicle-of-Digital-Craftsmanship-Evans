@@ -19,5 +19,5 @@ def login_and_get_session(email, password):
         return None
 
 if session:
-     web server, retrieving the HTML content of a webpage, and then parsing that content to extract the desired information. Web scraping can be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
+   he HTML content of a webpage, and then parsing that content to extract the desired information. Web scraping can be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
     
