@@ -19,5 +19,5 @@ def login_and_get_session(email, password):
         return None
 
 if session:
-      be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
+      and libraries, such as Python with BeautifulSoup or Scrapy.")
     
