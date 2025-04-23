@@ -19,5 +19,5 @@ def login_and_get_session(email, password):
         return None
 
 if session:
-     information. Web scraping can be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
+      be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
     
