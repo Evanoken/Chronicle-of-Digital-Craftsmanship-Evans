@@ -19,5 +19,5 @@ def login_and_get_session(email, password):
         return None
 
 if session:
-    ebsites. It involves making HTTP requests to a web server, retrieving the HTML content of a webpage, and then parsing that content to extract the desired information. Web scraping can be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
+     web server, retrieving the HTML content of a webpage, and then parsing that content to extract the desired information. Web scraping can be done using various programming languages and libraries, such as Python with BeautifulSoup or Scrapy.")
     
