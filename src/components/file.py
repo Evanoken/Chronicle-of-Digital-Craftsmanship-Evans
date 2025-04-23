@@ -29,3 +29,5 @@ def get_dashboard_data(session):
     else:
         print("Failed to retrieve dashboard data")
         return None
+
+def main():
