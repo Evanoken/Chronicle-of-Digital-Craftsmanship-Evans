@@ -47,5 +47,5 @@ def main():
 if __name__ == "__main__":
     main()
     
-# This code is a simple web scraper
+# This code is a simple web 
 
