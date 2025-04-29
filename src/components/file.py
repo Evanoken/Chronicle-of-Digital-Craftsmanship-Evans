@@ -44,7 +44,7 @@ def main():
     else:
         print("Failed to log in")
         
-if __name__ == "__main_
+if __name__ == "
     
 
 
