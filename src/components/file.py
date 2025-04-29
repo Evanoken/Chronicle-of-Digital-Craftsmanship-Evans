@@ -46,7 +46,7 @@ def main():
         
 if __name__ == "__main__":
     main()
-# This script logs into the Outlier.ai dashboard and retrieves the dashboard
+# This script logs into the Outlier.ai dashboard and 
 
 
 
