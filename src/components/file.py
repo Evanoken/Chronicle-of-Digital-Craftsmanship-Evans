@@ -46,6 +46,6 @@ def main():
         
 if __name__ == "__main__":
     main()
-    
-
+# This script logs into the Outlier.ai dashboard and retrieves the dashboard data.
+# It uses the requests library to handle HTTP requests and sessions.
 
