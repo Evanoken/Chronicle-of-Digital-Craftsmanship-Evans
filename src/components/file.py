@@ -47,6 +47,6 @@ def main():
 if __name__ == "__main__":
     main()
     
-# This code is a simple web scraper that logs into a website and retrieves 
+# This code is a simple web scraper that logs into a website 
 
 
