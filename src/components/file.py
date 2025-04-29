@@ -45,6 +45,6 @@ def main():
         print("Failed to log in")
 if __name__ == "__main__":
     main()
-# This script logs into the Outlier.ai platform and retrieves the dashboard data.    
+# This script logs into the Outlier.ai platform and retrieves the
 
 
