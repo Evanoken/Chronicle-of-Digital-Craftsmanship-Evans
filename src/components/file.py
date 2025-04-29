@@ -47,4 +47,3 @@ def main():
 if __name__ == "__main__":
     main()
     
-# This code is a simple web scraper that logs into a website and retrieves data from a dashboard.
