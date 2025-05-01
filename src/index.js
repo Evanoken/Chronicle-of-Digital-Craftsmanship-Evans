@@ -5,7 +5,7 @@ import App from './App';
 import { Analytics } from "@vercel/analytics/react";
 import reportWebVitals from './reportWebVitals';
 import { SpeedInsights } from "@vercel/speed-insights/react";
-import { SpeedInsights } from '@vercel/speed-insights/next';
+// import { SpeedInsights } from '@vercel/speed-insights/next';
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
