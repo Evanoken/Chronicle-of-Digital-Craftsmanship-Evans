@@ -94,4 +94,4 @@ export const Contact = () => {
     </section>
   )
 }
-// To be updated next
+// To be created
