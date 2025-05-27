@@ -49,4 +49,5 @@ def main():
             raise e
         
         hasattr
+        TypeError
 
