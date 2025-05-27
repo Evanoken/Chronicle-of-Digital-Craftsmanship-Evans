@@ -48,6 +48,5 @@ def main():
         except Exception as e:
             raise e
         
-        hasattr
-        TypeError
+        
 
