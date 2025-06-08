@@ -1,3 +1,4 @@
+
 import requests
 
 def login_and_get_session(email, password):
@@ -5,7 +6,7 @@ def login_and_get_session(email, password):
     login_url = 'https://app.outlier.ai/en/expert/login'
     data = {
         'email': email,
-        'password': password
+        'password': 
     }
     response = session.post(login_url, data=data, allow_redirects=True)
     print(f"Login response status code: {response.status_code}")
