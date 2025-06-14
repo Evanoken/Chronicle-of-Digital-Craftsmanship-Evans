@@ -52,5 +52,5 @@ def main():
         
 # new conct
         
-       stification for your selection. and also the comment as stated in the instructions. comment should be written Turn 2: A+, A++, B+, B++ etc based on the instructions with justification. be very careful on the evalution you are giving it should based on what is in the responses not just guess work or assumptions
+        also the comment as stated in the instructions. comment should be written Turn 2: A+, A++, B+, B++ etc based on the instructions with justification. be very careful on the evalution you are giving it should based on what is in the responses not just guess work or assumptions
 
