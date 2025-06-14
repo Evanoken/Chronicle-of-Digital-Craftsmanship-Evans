@@ -52,5 +52,5 @@ def main():
         
 # new conct
         
-        instructions with justification. be very careful on the evalution you are giving it should based on what is in the responses not just guess work or assumptions
+        . be very careful on the evalution you are giving it should based on what is in the responses not just guess work or assumptions
 
