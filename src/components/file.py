@@ -52,5 +52,5 @@ def main():
         
 # new conct
         
-      he responses not just guess work or assumptions
+       not just guess work or assumptions
 
