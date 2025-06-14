@@ -51,6 +51,5 @@ def main():
             raise e
         
 # new conct
-        
-   or assumptions
+
 
