@@ -52,5 +52,5 @@ def main():
         
 # new conct
         
-       based on what is in the responses not just guess work or assumptions
+       t is in the responses not just guess work or assumptions
 
