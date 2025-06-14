@@ -1,4 +1,5 @@
 
+import re
 import requests
 
 def login_and_get_session(email, password):
