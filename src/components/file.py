@@ -52,5 +52,5 @@ def main():
         
 # new conct
         
-      ou are giving it should based on what is in the responses not just guess work or assumptions
+       it should based on what is in the responses not just guess work or assumptions
 
