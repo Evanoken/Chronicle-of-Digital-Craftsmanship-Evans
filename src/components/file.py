@@ -52,5 +52,5 @@ def main():
         
 # new conct
         
-       it should based on what is in the responses not just guess work or assumptions
+       based on what is in the responses not just guess work or assumptions
 
