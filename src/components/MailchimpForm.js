@@ -19,6 +19,7 @@ export const MailchimpForm = () => {
             onError={error => console.error("Mailchimp error:", error)}
             onSuccess={() => console.log("Mailchimp success")}
             subscribe={subscribe}
+            status={status}
             />
         )}
         />
