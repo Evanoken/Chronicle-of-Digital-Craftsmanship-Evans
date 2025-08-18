@@ -18,6 +18,7 @@ export const MailchimpForm = () => {
             onValidated={formData => subscribe(formData)}
             onError={error => console.error("Mailchimp error:", error)}
             onSuccess={() => console.log("Mailchimp success")}
+            subscribe={subscribe}
             />
         )}
         />
