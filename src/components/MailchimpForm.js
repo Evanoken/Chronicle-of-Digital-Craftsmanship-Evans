@@ -21,6 +21,7 @@ export const MailchimpForm = () => {
             subscribe={subscribe}
             status={status}
             message={message}
+            onValidated={formData => subscribe(formData)}
             />
         )}
         />
