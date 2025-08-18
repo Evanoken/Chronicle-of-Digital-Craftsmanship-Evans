@@ -95,3 +95,6 @@ export const Contact = () => {
   )
 }
 // To be created
+// This component is used to create a contact form where users can send messages.
+
+// It includes fields for first name, last name, email, phone number, and a message.
