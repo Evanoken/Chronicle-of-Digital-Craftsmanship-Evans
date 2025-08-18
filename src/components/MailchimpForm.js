@@ -20,6 +20,7 @@ export const MailchimpForm = () => {
             onSuccess={() => console.log("Mailchimp success")}
             subscribe={subscribe}
             status={status}
+            message={message}
             />
         )}
         />
