@@ -1,3 +1,11 @@
-# https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /
+
+# Block sensitive or internal files (optional but recommended)
+Disallow: /api/
+Disallow: /admin/
+Disallow: /server/
+Disallow: /private/
+
+# Sitemap location
+Sitemap: https://www.evansconnects.com/sitemap.xml
