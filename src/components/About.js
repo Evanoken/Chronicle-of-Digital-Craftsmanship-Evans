@@ -11,7 +11,7 @@ const About = () => {
           <h2 className="section-title">Professional Summary</h2>
           <p className="about-text">
             A dedicated DevOps Engineer with over three years of experience in cloud computing, cybersecurity, 
-            and software development. Specializing in streamlining CI/CD pipelines across platforms like Azure, 
+            and software development. Specializing in streamlining CI/CD pipelines across platforms like Azure, AWS, 
             CRM D365, and Power Platform to ensure efficient and secure deployments.
           </p>
         </div>
