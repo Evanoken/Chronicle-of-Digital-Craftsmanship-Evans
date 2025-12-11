@@ -35,7 +35,7 @@ const About = () => {
             <div className="skills-column">
               <h3 className="skills-subtitle">Cloud & DevOps</h3>
               <ul className="skills-list">
-                <li>Microsoft Azure</li>
+                <li>Microsoft Azure & AWS</li>
                 <li>Docker and Kubernetes</li>
                 <li>CI/CD Pipeline Automation</li>
                 <li>Infrastructure as Code</li>
